@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kexnyxie — Data Science &amp; Worldbuilding</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="termbar">
+      <div class="titlebar">
+        <span class="dots"
+          ><span class="dot a"></span><span class="dot b"></span
+          ><span class="dot c"></span
+        ></span>
+        <span class="path">guest@kexnyxie: ~/portfolio</span>
+        <span class="status-led"><span class="blip"></span>online</span>
+      </div>
+      <nav class="cmdnav">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#log">log</a>
+        <a href="#goals">goals</a>
+        <a href="#now">now</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="wrap">
+        <p id="boot-line" aria-live="polite"></p>
+        <h1>
+          <span class="cyan">whoami</span> — <span class="blue">kexnyxie</span>
+        </h1>
+        <p class="lede">
+          First-year Data Science student building analytical and programming
+          fundamentals alongside technical foundation to eventually turn
+          original stories into interactive, RPG-style games.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="#log">view ./log</a>
+          <a class="btn ghost" href="mailto:nyxd052007@gmail.com"
+            >contact --email</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="cmdline">
+          <span class="prompt-inline">$</span><span class="cmd">cat</span
+          ><span class="arg">about.md</span>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>
+              <strong>Data Science student</strong>, one semester into a
+              Computer Science degree elsewhere before transferring in. Working
+              mainly in Python, JavaScript, and C++. Also drawn to the
+              structured-thinking side of programming that data work demands.
+            </p>
+            <p>
+              Outside of coursework: I love writing original stories—mostly
+              dark, atmospheric stuff, horror and mystery—with an eye towards
+              eventually building them into interactive, narrative-driven games.
+              That means learning Unity and C# alongside the degree. Game dev as
+              a long-term, self-directed extension of the same analytical skills
+              being built in Data Science.
+            </p>
+            <p>
+              Also slowly learning German and French at the same time, because
+              apparently one new language wasn't enough of a challenge.
+            </p>
+            <p>
+              Looking for a co-op or internship where the coursework can meet
+              real data problems.
+            </p>
+          </div>
+          <div class="fieldset">
+            <dl>
+              <div class="row">
+                <dt>program</dt>
+                <dd>B.Sc. Data Science</dd>
+              </div>
+              <div class="row">
+                <dt>term</dt>
+                <dd>Year 1</dd>
+              </div>
+              <div class="row">
+                <dt>languages</dt>
+                <dd>Python, JS, C++, C#</dd>
+              </div>
+              <div class="row">
+                <dt>speaks</dt>
+                <dd>English, Hindi, German (A2), French, Russian</dd>
+              </div>
+              <div class="row">
+                <dt>reads/watches</dt>
+                <dd>Works by Dostoevsky · manhwas · mangas · Thrillers</dd>
+              </div>
+              <div class="row">
+                <dt>status</dt>
+                <dd class="cyan">open_to_coop</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="cmdline">
+          <span class="prompt-inline">$</span><span class="cmd">ls</span
+          ><span class="arg">-la skills/</span>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <p class="label">languages</p>
+            <div class="chip-row">
+              <span class="chip">python</span>
+              <span class="chip">javascript</span>
+              <span class="chip">c++</span>
+              <span class="chip learning">c#</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="label">tools</p>
+            <div class="chip-row">
+              <span class="chip">numpy</span>
+              <span class="chip">jupyter</span>
+              <span class="chip">git</span>
+              <span class="chip">rest apis</span>
+              <span class="chip">node.js</span>
+              <span class="chip">discord.js</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="label">in progress</p>
+            <div class="chip-row">
+              <span class="chip learning">unity</span>
+              <span class="chip learning">c# for gamedev</span>
+              <span class="chip learning">stat / linear algebra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="log">
+      <div class="wrap">
+        <div class="cmdline">
+          <span class="prompt-inline">$</span><span class="cmd">git log</span
+          ><span class="arg">--oneline --stat projects/</span>
+        </div>
+        <!-- JavaScript dynamically populates this container from data/projects.json -->
+        <div class="log" id="projects-container"></div>
+      </div>
+    </section>
+
+    <section id="goals">
+      <div class="wrap">
+        <div class="cmdline">
+          <span class="prompt-inline">$</span><span class="cmd">cat</span
+          ><span class="arg">goals.txt</span>
+        </div>
+        <ul class="goals-list">
+          <li>
+            <span class="status">active</span><strong>Next term:</strong> a core
+            stats/CS course sequence — building toward the foundational math and
+            programming needed for the degree.
+          </li>
+          <li>
+            <span class="status pending">queued</span
+            ><strong>Co-op eligibility</strong> opens once credit and GPA
+            requirements are met — applying as soon as eligible.
+          </li>
+          <li>
+            <span class="status pending">ongoing</span
+            ><strong>Gyeol Study Bot:</strong> a Discord productivity bot in
+            active development, focused on workflow automation.
+          </li>
+          <li>
+            <span class="status pending">long-term</span
+            ><strong>Narrative concept development</strong> for an original
+            RPG-style game — writing story concepts now, building the
+            C++/C#/Unity foundation to eventually ship them.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="now">
+      <div class="wrap">
+        <div class="cmdline">
+          <span class="prompt-inline">$</span><span class="cmd">cat</span
+          ><span class="arg">now.log</span>
+        </div>
+        <div class="now-grid">
+          <div class="now-card">
+            <p class="k">reading</p>
+            <p class="v">
+              whatever manga/manhwa or novel promises the most dread — horror,
+              thriller, and mystery, mainly
+            </p>
+          </div>
+          <div class="now-card">
+            <p class="k">learning</p>
+            <p class="v">German (A2) and French at the same time</p>
+          </div>
+          <div class="now-card">
+            <p class="k">building</p>
+            <p class="v">
+              a Discord bot, an open-source contribution habit, and a growing
+              pile of RPG worldbuilding notes
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site" id="contact">
+      <div class="wrap">
+        <h2>$ ssh kexnyxie <span class="cursor"></span></h2>
+        <div class="contact-block">
+          <div class="contact-row">
+            <dt>email</dt>
+            <dd>
+              <a href="mailto:nyxd052007@gmail.com">nyxd052007@gmail.com</a>
+            </dd>
+          </div>
+          <div class="contact-row">
+            <dt>github</dt>
+            <dd>
+              <a
+                href="https://github.com/kexnyxie"
+                target="_blank"
+                rel="noopener"
+                >kexnyxie</a
+              >
+            </dd>
+          </div>
+          <div class="contact-row">
+            <dt>discord</dt>
+            <dd>
+              <a
+                href="https://discord.com/users/ke.nx_"
+                target="_blank"
+                rel="noopener"
+                >@ke.nx_</a
+              >
+            </dd>
+          </div>
+        </div>
+        <p class="final-line">
+          # exit status 0 — signal steady, coordinates classified · 2026
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modular JavaScript -->
+    <script src="js/boot.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

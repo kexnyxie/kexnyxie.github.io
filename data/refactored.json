@@ -1,0 +1,50 @@
+[
+  {
+    "id": "gyeol",
+    "hash": "c3f7a19",
+    "title": "Gyeol — Study Bot",
+    "description": "Discord productivity bot featuring a pomodoro timer, todo list, XP/leveling, in-server economy, and custom profile card commands.",
+    "tags": ["javascript", "discord.js", "sqlite"],
+    "link": "https://github.com/kexnyxie"
+  },
+  {
+    "id": "venus",
+    "hash": "a1c9e2f",
+    "title": "Venus — Discord Bot",
+    "description": "Study companion featuring pomodoro timers, to-do tracking, and productivity nudges.",
+    "tags": ["python"],
+    "link": "https://github.com/kexnyxie/venus-discord-bot"
+  },
+  {
+    "id": "weather",
+    "hash": "7f3b0d1",
+    "title": "Weather App",
+    "description": "Fetches and renders live weather conditions via a RESTful public weather API.",
+    "tags": ["javascript", "rest api"],
+    "link": "https://github.com/kexnyxie/first-weather-app"
+  },
+  {
+    "id": "calendar",
+    "hash": "4e88a76",
+    "title": "Desktop Calendar App",
+    "description": "Desktop calendar application built in Electron/Node.js, with UI designed in Figma.",
+    "tags": ["electron", "node.js", "figma"],
+    "link": "https://github.com/kexnyxie/cute-electron-application"
+  },
+  {
+    "id": "guessing-game",
+    "hash": "2c015aa",
+    "title": "Number Guessing Game",
+    "description": "Difficulty-adjustable CLI puzzle leveraging randomized state logic.",
+    "tags": ["python"],
+    "link": "https://github.com/kexnyxie/NumberGuessingGame"
+  },
+  {
+    "id": "open-source-pr",
+    "hash": "9b41f03",
+    "title": "First Open-Source PR",
+    "description": "Optimized an HTML-scraping command by implementing a REST API call within a full fork-to-PR workflow.",
+    "tags": ["javascript", "open source"],
+    "link": "https://github.com/kexnyxie"
+  }
+]
