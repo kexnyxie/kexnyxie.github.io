@@ -6,7 +6,7 @@ Live Demo: [kexnyxie.github.io](https://kexnyxie.github.io)
 
 ---
 
-## 🛠️ Overview & Architecture
+## Overview & Architecture
 
 Instead of relying on heavy frontend frameworks, this site is built using **vanilla web technologies** paired with structured data files to keep it lightweight, fast, and authentic to a terminal interface.
 
